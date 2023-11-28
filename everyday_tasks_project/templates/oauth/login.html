@@ -1,11 +1,13 @@
+{% extends 'oauth/oauth_base.html' %}
+
 {% load socialaccount %}
-<html>
-<body>
-<h1>My Google OAuth Project </h1>
-{% if user.is_authenticated %}
-  <p>Welcome, You are logged in as {{ user.username }}</p>
-{% else %}
-  <a href="{% provider_login_url 'google' %}">Login With Google</a>
-{% endif %}
-</body>
-</html>
+
+{% block content %}
+  <h1>Everyday tasks </h1>
+  {% if user.is_authenticated %}
+    <p>Добро пожаловать, Вы вошли в систему как {{ user.username }}</p>
+  {% else %}
+    <a href="{% provider_login_url 'google' %}">Login With Google</a>
+    <a href="{% provider_login_url 'vk' %}">Login With VK</a>
+  {% endif %}
+{% endblock %}
