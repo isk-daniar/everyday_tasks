@@ -1,4 +1,4 @@
-{% extends 'oauth/oauth_base.html' %}
+{% extends 'base.html' %}
 
 {% load socialaccount %}
 
@@ -10,4 +10,5 @@
     <a href="{% provider_login_url 'google' %}">Login With Google</a>
     <a href="{% provider_login_url 'vk' %}">Login With VK</a>
   {% endif %}
+
 {% endblock %}
