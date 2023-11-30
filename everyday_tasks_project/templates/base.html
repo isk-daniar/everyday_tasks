@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VKFurrow</title>
+    <!-- Bootstrap -->
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="{% static 'fonts/Commissioner-Bold/Commissioner-Bold.ttf' %}">
+    <link rel="stylesheet" href="{% static 'fonts/Commissioner-ExtraBold/Commissioner-ExtraBold.ttf' %}">
+    <link rel="stylesheet" href="{% static 'fonts/Commissioner-Regular/Commissioner-Regular.ttf' %}">
+    <link rel="stylesheet" href="{% static 'fonts/Montserrat-Bold/Montserrat-Bold.ttf' %}">
+    <link rel="stylesheet" href="{% static 'fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.ttf' %}">
+    <link rel="stylesheet" href="{% static 'fonts/Montserrat-Medium/Montserrat-Medium.ttf' %}">
+    <link rel="stylesheet" href="{% static 'fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf' %}">
+    <link rel="stylesheet" href="{% static 'fonts/OpenSans-Bold/OpenSans-Bold.ttf' %}">
+    <link rel="stylesheet" href="{% static 'fonts/OpenSans-Regular/OpenSans-Regular.ttf' %}">
+    <link rel="stylesheet" href="{% static 'fonts/OpenSans-SemiBold/OpenSans-SemiBold.ttf' %}">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/home/home.css' %}">
+</head>
+<body>
+    <div id="homeapp" class="l-body p-home">
+        <div class="modal"></div>
+        <header class="h-header">
+            <div class="h-header__wrapper">
+                <div class="h-header__inn">
+                    <div class="h-header__trigger">
+                        <a href="#" aria-label="Меню" class="h-header__menu-bar">
+                            <div class="h-hamburger">
+                                <span></span>
+                            </div>
+                        </a>
+                        <label class="h-switcher ">
+                            <input type="checkbox">
+                            <span class="h-switcher__label">Исполнитель</span>
+                            <span class="h-switcher__block"></span>
+                            <span class="h-switcher__label">Заказчик</span>
+                        </label>
+                    </div>
+                    <div class="h-header__logo">
+                        <a href="/" class="logo ">
+                            <img src="{% static 'icons/home/logo.png' %}">
+                            <div class="h-header__logo-default inline-logo"></div>
+                            <div class="h-header__logo-scrolling inline-logo-dark"></div>
+                        </a>
+                    </div>
+                    <div class="h-header__auth">
+                        <a href="/assignments" class="h-user">
+                            <picture class="user-pic">
+                                <img alt="IzDan4ik" src="https://vkserfing.ru//uploads/accounts_image/551421/42b20d8b35a3fad1e6889af19c678bb4_thumb.jpg">
+                            </picture>
+                            <span class="h-user__name">IzDan4ik</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="p-home__head">
+            <div class="p-home__bg">
+                <canvas width="1176" style="position: absolute;left: 0px;top: 0px;z-index: 1;pointer-events: none;width: 1176px;height: 1100px;" height="1100"></canvas>
+            </div>
+        </section>
+    </div>
+    {% block content %}{% endblock %}
+</body>
+</html>
