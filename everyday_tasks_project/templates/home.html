@@ -6,6 +6,7 @@
   <h1>Everyday tasks </h1>
   {% if user.is_authenticated %}
     <p>Добро пожаловать, Вы вошли в систему как {{ user.username }}</p>
+    <img src="{{ user.socialaccount_set.all.0.get_avatar_url }}" />
   {% else %}
     <a href="{% provider_login_url 'google' %}">Login With Google</a>
     <a href="{% provider_login_url 'vk' %}">Login With VK</a>
