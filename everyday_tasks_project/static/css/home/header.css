@@ -1,0 +1,128 @@
+/* header */
+.h-header {
+    position: sticky;
+    transition: background linear .3s;
+    z-index: 99;
+    padding-top: 1px;
+}
+.h-header__inn {
+    display: flex;
+    align-items: center;
+    max-width: 1105px;
+    margin: 0 auto;
+    width: 100%;
+    transition: all linear .3s;
+    padding: 0 15px;
+    height: 80px;
+}
+
+/* header__trigger */
+.h-header__inn>* {
+    flex: 1;
+}
+.h-header__menu-bar {
+    display: none;
+}
+.h-switcher {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+}
+.h-switcher input {
+    display: none;
+}
+.h-switcher__block {
+    width: 40px;
+    height: 24px;
+    background: rgba(255,255,255,.07);
+    border-radius: 64px;
+    position: relative;
+    margin: 0 14px;
+}
+.h-switcher__block:before {
+    content: "";
+    position: absolute;
+    background: #8cc1ff;
+    box-shadow: inset 2px 2px 8px 2px #528dff;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    top: 3px;
+    left: 3px;
+    transition: all ease .3s;
+}
+/* header__logo */
+.h-header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h-header__logo .logo {
+    transition: all linear .3s;
+}
+
+/* header__auth */
+.h-header__auth {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.h-header .h-user {
+    height: 55px;
+    padding-left: 18px;
+    padding-right: 40px;
+}
+.h-user {
+    display: inline-flex;
+    background: rgba(0,0,0,.05);
+    border-radius: 64px;
+    height: 64px;
+    align-items: center;
+    position: relative;
+    padding-left: 12px;
+    padding-right: 50px;
+    transition: all ease .3s;
+    color: #fff;
+}
+.h-header .h-user:before {
+    right: 15px;
+}
+.h-user:before {
+    content: "";
+    font-size: 11px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+}
+.h-header .h-user .user-pic {
+    width: 24px;
+    height: 24px;
+}
+.h-user .user-pic {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+.user-pic {
+    width: 48px;
+    height: 48px;
+    position: relative;
+    border-radius: 50%;
+    display: block;
+}
+.user-pic:after, .user-pic:before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+}
+.user-pic img {
+    z-index: 2;
+    position: relative;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}

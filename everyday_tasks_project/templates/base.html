@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>VKFurrow</title>
+    <title>VKFurrow – заработок и продвижение в ВКонтакте</title>
     <!-- Bootstrap -->
 
     <!-- FONTS -->
@@ -20,6 +20,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/home/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home/start.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home/business.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home/s.css' %}">
+    <style type="text/css">
+        .h-switcher input{display:none}input:checked~.h-switcher__block:before{left:19px}input:not(:checked)~.h-switcher__label:not(:last-child){opacity:1}input:checked~.h-switcher__label:last-child{opacity:1}.h-header.is-scrolling .h-switcher,.h-switcher--inverse{color:rgba(37,49,71,.6)}.h-header.is-scrolling .h-switcher input:checked~.h-switcher__label:last-child,.h-header.is-scrolling .h-switcher input:not(:checked)~.h-switcher__label:not(:last-child),.h-switcher--inverse input:checked~.h-switcher__label:last-child,.h-switcher--inverse input:not(:checked)~.h-switcher__label:not(:last-child){color:#6c76ec}.h-header.is-scrolling .h-switcher .h-switcher__block,.h-switcher--inverse .h-switcher__block{background:rgba(126,151,255,.13)}.h-header.is-scrolling .h-switcher .h-switcher__block:before,.h-switcher--inverse .h-switcher__block:before{background:#959dff;-webkit-box-shadow:inset 2px 2px 8px 2px #4d89ff;box-shadow:inset 2px 2px 8px 2px #4d89ff}.h-header.is-scrolling .h-switcher .h-switcher__label,.h-switcher--inverse .h-switcher__label{opacity:1!important}.h-switcher__block{width:40px;height:24px;background:rgba(255,255,255,.07);border-radius:64px;position:relative;margin:0 14px}.h-switcher__block:before{content:"";position:absolute;background:#8cc1ff; #528dff;box-shadow:inset 2px 2px 8px 2px #528dff;border-radius:50%;width:18px;height:18px;top:3px;left:3px;-webkit-transition:all ease .3s;transition:all ease .3s}.h-switcher__label{font-size:12px;font-weight:600;opacity:.7}@media only screen and (max-width:768px){.h-switcher__label{font-size:14px}}
+    </style>
 </head>
 <body>
     <div id="homeapp" class="l-body p-home">
@@ -58,9 +65,137 @@
                 </div>
             </div>
         </header>
-        <section class="p-home__head">
-            <div class="p-home__bg">
-                <canvas width="1176" style="position: absolute;left: 0px;top: 0px;z-index: 1;pointer-events: none;width: 1176px;height: 1100px;" height="1100"></canvas>
+        <section id="start" class="p-home__head">
+            <div class="waveWrapper waveAnimation">
+              <div class="waveWrapperInner bgTop">
+                <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+              </div>
+              <div class="waveWrapperInner bgMiddle">
+                <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+              </div>
+              <div class="waveWrapperInner bgBottom">
+                <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+              </div>
+            </div>
+            <div class="l-wrapper relative">
+                <div class="p-home__head-top">
+                    <h1 class="h1 p-home__title">
+                        Биржа заработка и продвижения
+                        <br>
+                        <span>в социальной сети VK</span>
+                    </h1>
+                    <a href="/assignments" class="h-user">
+                        <picture class="user-pic">
+                            <img alt="IzDan4ik" src="https://vkserfing.ru//uploads/accounts_image/551421/42b20d8b35a3fad1e6889af19c678bb4_thumb.jpg"></picture>
+                        <span class="h-user__name">IzDan4ik</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="business" class="p-home__features">
+            <div class="p-home__head-stats">
+                    <div class="stats-row">
+                        <div class="stat">
+                            <div class="stat__value">10 лет</div>
+                            <span class="stat__label">
+                                в сфере
+                                <br>
+                                продвижения
+                            </span>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__value">
+                                4<span class="text-style">.</span>5М
+                            </div>
+                            <span class="stat__label">
+                                исполнителей
+                                <br>
+                                в сервисе
+                            </span>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__value">36К</div>
+                            <span class="stat__label">
+                                заданий доступно
+                                <br>
+                                сейчас
+                            </span>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__value">
+                                115<span class="text-style">.</span>7М
+                            </div>
+                            <span class="stat__label">
+                                выплачено
+                                <br>
+                                исполнителям
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            <div class="l-wrapper">
+                <div class="p-home__features-head">
+                    <a href="#" class="p-home__features-title is-active">
+                        <span>Заработок</span>
+                    </a>
+                    <a href="#" class="p-home__features-title">
+                        <span>Продвижение</span>
+                    </a>
+                </div>
+                <div class="row row--lg">
+                    <div class="col-12">
+                        <div class="h-carousel">
+                            <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events swiper-container-free-mode">
+                                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <!---->
+                                    <div class="swiper-slide" style="width: 259.25px;margin-right: 40px;">
+                                        <div class="feature feature--violet">
+                                            <div class="feature__name wow fadeInLeft">Заработок с помощью личных страниц соцсетей</div>
+                                            <div class="feature__icon wow fadeInUp">
+                                                <picture>
+                                                    <img  width="240" height="238"  src="{% static 'icons/home/carousel/smile.png' %}">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 259.25px;margin-right: 40px;">
+                                        <div class="feature feature--red">
+                                            <div class="feature__name wow fadeInLeft">Более 500 новых заданий ежедневно</div>
+                                            <div class="feature__icon wow fadeInUp">
+                                                <picture>
+                                                    <img  width="240" height="238"  src="{% static 'icons/home/carousel/copy.png' %}">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 259.25px;margin-right: 40px;">
+                                        <div class="feature feature--green">
+                                            <div class="feature__name wow fadeInLeft">Вывод средств на QIWI, ЮMoney, Payeer, Perfect Money</div>
+                                            <div class="feature__icon wow fadeInUp">
+                                                <picture>
+                                                    <img  width="240" height="238"  src="{% static 'icons/home/carousel/wallet.png' %}">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" style="width: 259.25px;margin-right: 40px;">
+                                        <div class="feature feature--blue">
+                                            <div class="feature__name wow fadeInLeft">Выплаты каждую субботу без задержек</div>
+                                            <div class="feature__icon wow fadeInUp">
+                                                <picture>
+                                                    <img  width="240" height="238"  src="{% static 'icons/home/carousel/check.png' %}">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
