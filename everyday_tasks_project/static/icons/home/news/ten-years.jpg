@@ -1,0 +1,727 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Нам 10 лет! Подарки исполнителям, заказчикам, рефоводам</title><meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+
+<meta name='yandex-verification' content='540b16d5938367f1' />
+<meta name="webmoney" content="6D850942-1C48-44B5-8647-573E8A9CAAF1"/>
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+
+
+
+<meta name="theme-color" content="#6972e0">
+<meta name="msapplication-navbutton-color" content="#6972e0">
+<meta name="apple-mobile-web-app-status-bar-style" content="#6972e0">
+
+
+
+<link rel="preload" as="font" href="/frontend/assets/fonts/Montserrat-Medium/Montserrat-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="/frontend/assets/fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="/frontend/assets/fonts/Montserrat-Bold/Montserrat-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="/frontend/assets/fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.woff2" type="font/woff2" crossorigin="anonymous">
+
+
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.gstatic.com">
+<link rel="preconnect" href="https://www.google.com">
+<link rel="preconnect" href="https://mc.yandex.ru">
+<link rel="preconnect" href="http://mc.yandex.ru">
+
+    <link rel="stylesheet" type="text/css" href="/frontend/js/app.vendor.8ae9572cf021554a680b.css" />
+<link rel="stylesheet" type="text/css" href="/frontend/js/app.0c3130d79b5f95363710.css" />
+<link rel="stylesheet" type="text/css" href="/frontend/assets/css/app-75b6411e9e.css" />
+    
+    <script type="text/javascript">
+        var SVG          = '            /frontend/assets/img/sprite-b8addebe14.svg',
+            IS_AUTH      = true,
+            SITE_URL     = 'https://vkserfing.ru/',
+            TOKEN        = 'WFkzZGN1MXFpUmJrenNHV0ZtVWd1dz09',
+            RECAPTCHA_KEY = '6LfoHRATAAAAALkwm20INNDPdoW-9_5IkP1xfTDs',
+            
+            platforms        = {"vk":{"label":"ВКонтакте","url":"vk.com","additional_urls":["vk.ru"],"color":"#6972e0","desc":"Подписчики, лайки, репосты, друзья, опросы, комментарии, просмотры записей, видео и клипов, автозадания","icon_outline":"vk","icon":"vk","enabled":true},"instagram":{"label":"Instagram*","url":"instagram.com","color":"#da374f","desc":"Подписчики, лайки, комментарии, просмотры видео и историй, автозадания","require_data":["birthday","country_id","city_id","sex"],"icon_outline":"instagram","icon":"instagram","enabled":true},"tiktok":{"label":"Тик Ток","url":"tiktok.com","color":"#000000","desc":"Подписчики, просмотры, лайки, репосты, комментарии","icon_outline":"tiktok-outline","require_data":["birthday","country_id","city_id","sex"],"icon":"tiktok","enabled":true},"likee":{"label":"Likee","url":"likee.video","additional_urls":["likee.com","lite.likeevideo.com","like.video"],"color":"#ff0072","desc":"Подписчики, просмотры, лайки, репосты, комментарии","icon_outline":"likee-outline","require_data":["country_id","city_id","sex"],"icon":"likee","enabled":true},"telegram":{"label":"Telegram","url":"t.me","color":"#6c93d4","icon_outline":"telegram-plane","desc":"Подписчики на канал\/группу, просмотры записей, автозадания","require_data":["birthday","country_id","city_id","sex"],"icon":"telegram","enabled":true},"youtube":{"label":"YouTube","url":"youtube.com","color":"#f61c0d","desc":"Лайки, подписчики, просмотры","require_data":["birthday","country_id","city_id","sex"],"icon_outline":"youtube","icon":"youtube","enabled":false},"facebook":{"label":"Facebook*","url":"facebook.com","color":"#5259b4","icon_outline":"facebook-letter","desc":"Лайки, поделиться, друзья, мероприятия, видео, подписчики, комментарии","icon":"facebook","enabled":false},"ok":{"label":"Одноклассники","url":"ok.ru","color":"#ff9800","desc":"Лайки, поделиться, друзья, мероприятия, видео, подписчики, комментарии","icon_outline":"ok","icon":"ok","enabled":false}},
+            types            = {"vk":{"vk_community":{"auto":false,"icon_sm":"users","color":"#4b8f00","base_type":"group","label":"Подписчики","label_xs":"Подписчики"},"vk_like":{"auto":false,"icon_sm":"heart-fill","color":"#fa7777","base_type":"likes","label":"Лайки","label_xs":"Лайки"},"vk_share":{"auto":false,"icon_sm":"refresh","color":"#81be3a","base_type":"repost","label":"Репосты","label_xs":"Репосты"},"vk_friends":{"auto":false,"icon_sm":"user-fill","color":"#6770e0","base_type":"friends","label":"Друзья","label_xs":"Друзья"},"vk_poll":{"auto":false,"icon_sm":"chart","color":"#9534eb","base_type":"poll","label":"Опросы","label_xs":"Опросы"},"vk_comment":{"auto":false,"icon_sm":"comment","color":"#f99b00","base_type":"comments","label":"Комментарии","label_xs":"Комментарии"},"vk_view":{"auto":false,"icon_sm":"eye","color":"#3799ce","base_type":"views","label":"Просмотры записей","label_xs":"Просмотры"},"vk_video":{"auto":false,"icon_sm":"camera","color":"#f85757","base_type":"video","label":"Просмотры видео","label_xs":"Просмотры"},"vk_automatic_like":{"auto":true,"icon_sm":"heart-fill","color":"#495370","base_type":"autolikes","label":"Автолайки","label_xs":"Автолайки"},"vk_automatic_share":{"auto":true,"icon_sm":"refresh","color":"#495370","base_type":"autorepost","label":"Авторепосты","label_xs":"Авторепосты"},"vk_automatic_comment":{"auto":true,"icon_sm":"comment","color":"#495370","base_type":"autocomments","label":"Автокомментарии","label_xs":"Автокомментарии"},"vk_automatic_view":{"auto":true,"icon_sm":"eye","color":"#495370","base_type":"autoviews","label":"Автопросмотры записей","label_xs":"Автопросмотры"},"vk_automatic_video":{"auto":true,"icon_sm":"camera","color":"#495370","base_type":"autovideo","label":"Автопросмотры видео","label_xs":"Автопросмотры"},"vk_automatic_poll":{"auto":true,"icon_sm":"chart","color":"#495370","base_type":"autopoll","label":"Автоопросы","label_xs":"Автоопросы"}},"instagram":{"instagram_follower":{"auto":false,"icon_sm":"users","color":"#4b8f00","base_type":"followers","label":"Подписчики","label_xs":"Подписчики"},"instagram_like":{"auto":false,"icon_sm":"heart-fill","color":"#fa7777","base_type":"likes","label":"Лайки","label_xs":"Лайки"},"instagram_comment":{"auto":false,"icon_sm":"comment","color":"#f99b00","base_type":"comments","label":"Комментарии","label_xs":"Комментарии"},"instagram_view_video":{"auto":false,"icon_sm":"camera","color":"#f85757","base_type":"video","label":"Просмотры видео","label_xs":"Просмотры"},"instagram_view_history":{"auto":false,"icon_sm":"docs","color":"#5259b4","base_type":"history","label":"Просмотры историй","label_xs":"Истории"},"instagram_automatic_like":{"auto":true,"icon_sm":"heart-fill","color":"#495370","base_type":"autolikes","label":"Автолайки","label_xs":"Автолайки"},"instagram_automatic_comment":{"auto":true,"icon_sm":"comment","color":"#495370","base_type":"autocomments","label":"Автокомментарии","label_xs":"Автокомментарии"},"instagram_automatic_view_video":{"auto":true,"icon_sm":"camera","color":"#495370","base_type":"autovideo","label":"Автопросмотры видео","label_xs":"Автопросмотры"}},"telegram":{"telegram_follower":{"auto":false,"icon_sm":"users","color":"#4b8f00","base_type":"followers","label":"Подписчики","label_xs":"Подписчики"},"telegram_view":{"auto":false,"icon_sm":"eye","color":"#3799ce","base_type":"views","label":"Просмотры записей","label_xs":"Просмотры"},"telegram_automatic_view":{"auto":true,"icon_sm":"eye","color":"#495370","base_type":"autoviews","label":"Автопросмотры записей","label_xs":"Автопросмотры"}},"tiktok":{"tiktok_follower":{"auto":false,"icon_sm":"users","color":"#4b8f00","base_type":"followers","label":"Подписчики","label_xs":"Подписчики"},"tiktok_view":{"auto":false,"icon_sm":"camera","color":"#f85757","base_type":"video","label":"Просмотры","label_xs":"Просмотры"},"tiktok_like":{"auto":false,"icon_sm":"heart-fill","color":"#fa7777","base_type":"likes","label":"Лайки","label_xs":"Лайки"},"tiktok_share":{"auto":false,"icon_sm":"refresh","color":"#81be3a","base_type":"repost","label":"Репосты","label_xs":"Репосты"},"tiktok_comment":{"auto":false,"icon_sm":"comment","color":"#f99b00","base_type":"comments","label":"Комментарии","label_xs":"Комментарии"},"tiktok_automatic_like":{"auto":true,"icon_sm":"heart-fill","color":"#495370","base_type":"autolikes","label":"Автолайки","label_xs":"Автолайки"},"tiktok_automatic_comment":{"auto":true,"icon_sm":"comment","color":"#495370","base_type":"autocomments","label":"Автокомментарии","label_xs":"Автокомментарии"},"tiktok_automatic_view":{"auto":true,"icon_sm":"camera","color":"#495370","base_type":"autovideo","label":"Автопросмотры","label_xs":"Автопросмотры"},"tiktok_automatic_share":{"auto":true,"icon_sm":"refresh","color":"#495370","base_type":"autorepost","label":"Авторепосты","label_xs":"Авторепосты"}},"youtube":{"youtube_follower":{"auto":false,"icon_sm":"users","color":"#4b8f00","base_type":"followers","label":"Подписчики","label_xs":"Подписчики"},"youtube_view":{"auto":false,"icon_sm":"camera","color":"#f85757","base_type":"video","label":"Просмотры","label_xs":"Просмотры"},"youtube_like":{"auto":false,"icon_sm":"heart-fill","color":"#fa7777","base_type":"likes","label":"Лайки","label_xs":"Лайки"},"youtube_automatic_like":{"auto":true,"icon_sm":"heart-fill","color":"#495370","base_type":"autolikes","label":"Автолайки","label_xs":"Автолайки"},"youtube_automatic_view":{"auto":true,"icon_sm":"camera","color":"#495370","base_type":"autovideo","label":"Автопросмотры","label_xs":"Автопросмотры"}},"likee":{"likee_follower":{"auto":false,"icon_sm":"users","color":"#4b8f00","base_type":"followers","label":"Подписчики","label_xs":"Подписчики"},"likee_view":{"auto":false,"icon_sm":"camera","color":"#f85757","base_type":"video","label":"Просмотры","label_xs":"Просмотры"},"likee_like":{"auto":false,"icon_sm":"heart-fill","color":"#fa7777","base_type":"likes","label":"Лайки","label_xs":"Лайки"},"likee_share":{"auto":false,"icon_sm":"refresh","color":"#81be3a","base_type":"repost","label":"Репосты","label_xs":"Репосты"},"likee_comment":{"auto":false,"icon_sm":"comment","color":"#f99b00","base_type":"comments","label":"Комментарии","label_xs":"Комментарии"},"likee_automatic_like":{"auto":true,"icon_sm":"heart-fill","color":"#495370","base_type":"autolikes","label":"Автолайки","label_xs":"Автолайки"},"likee_automatic_comment":{"auto":true,"icon_sm":"comment","color":"#495370","base_type":"autocomments","label":"Автокомментарии","label_xs":"Автокомментарии"},"likee_automatic_view":{"auto":true,"icon_sm":"camera","color":"#495370","base_type":"autovideo","label":"Автопросмотры","label_xs":"Автопросмотры"},"likee_automatic_share":{"auto":true,"icon_sm":"refresh","color":"#495370","base_type":"autorepost","label":"Авторепосты","label_xs":"Авторепосты"}}},
+            ulogin_auth      = ["vk"];
+
+        __STATE__ = {
+                            user: {
+                    name: 'IzDan4ik',
+                    photo: 'https://vkserfing.ru//uploads/accounts_image/551421/42b20d8b35a3fad1e6889af19c678bb4_thumb.jpg',
+                    time_reg: 1701076418,
+                    email: 'ssebase123@yandex.ru',
+                    accounts: [
+                                                    {"id":"551420209","name":"Данияр Искужин","platform_id":"287872705","platform_alias":"id287872705","platform_url":"https:\/\/vk.com\/id287872705","platform":"vk","status":"active","photo_thumb":"https:\/\/sun9-32.userapi.com\/s\/v1\/if1\/R8WM749_ByZZC2cOnjRQbOnM_Hev1fsiMHjmSuOsRdDVBMFxves50C3AmnL053gZyf0unjlW.jpg?size=50x50&quality=96&crop=432,306,1289,1289&ava=1"},
+                                                    {"id":"551421406","name":"IzDan4ik","platform_id":"7016925360261579782","platform_alias":"@izdan4ik","platform_url":"https:\/\/tiktok.com\/@izdan4ik","platform":"tiktok","status":"active","photo_thumb":"https:\/\/vkserfing.ru\/\/uploads\/accounts_image\/551421\/42b20d8b35a3fad1e6889af19c678bb4_thumb.jpg"},
+                                            ]
+                },
+                auth_platforms: ["vk","instagram","tiktok","likee","telegram"],
+                                    balance: '0.10',
+                    notifications: 1                                    };
+
+                                    var TIMESTAMP    = 1701668751,
+                    LIMITS        = {"file_size":3,"file_count":10},
+                    ASSIGNMENTS_LIFETIME = 600,
+                    POSTS_VIEW_TIME  = 10,
+                    VIDEO_VIEW_TIME = 30,
+                    campaignStatuses = {"on":{"label":"Активные","alias":"active","icon":"play"},"pause":{"label":"Остановленные","alias":"paused","icon":"pause"},"finished":{"label":"Завершенные","alias":"finished","icon":"check-1"},"in_queue":{"label":"В очереди","alias":"queue","icon":"clock-refresh"},"moderated":{"label":"На модерации","alias":"moderate","icon":"edit"},"banned":{"label":"Заблокированные","alias":"block","icon":"cancel-1"},"delete":{"label":"В архиве","alias":false,"public":false}},
+                    prices           = {"vk_community_insurance":"0.9","vk_community":"0.6","vk_like":"0.2","vk_share":"0.4","vk_friends":"0.4","vk_poll":"0.4","vk_comment":"0.8","vk_view":"0.15","vk_video":"0.2","instagram_follower":"0.6","instagram_like":"0.3","instagram_comment":"0.8","instagram_view_video":"0.25","instagram_view_history":"0.05","telegram_follower":"0.7","telegram_view":"0.2","tiktok_follower":"0.6","tiktok_view":"0.2","tiktok_like":"0.3","tiktok_share":"0.2","tiktok_comment":"0.8","youtube_follower":0,"youtube_view":0,"youtube_like":0,"likee_follower":"0.6","likee_view":"0.2","likee_like":"0.3","likee_share":"0.2","likee_comment":"0.8"},
+                    dailyLimits = {
+                                                    vk_community: 720,
+                                                    vk_like: 960,
+                                                    vk_share: 480,
+                                                    vk_friends: 960,
+                                                    vk_poll: 1200,
+                                                    vk_comment: 480,
+                                                    vk_view: 24000,
+                                                    vk_video: 5760,
+                                                    instagram_follower: 1200,
+                                                    instagram_like: 2880,
+                                                    instagram_comment: 720,
+                                                    instagram_view_video: 5760,
+                                                    instagram_view_history: 24000,
+                                                    telegram_follower: 480,
+                                                    telegram_view: 24000,
+                                                    tiktok_follower: 1920,
+                                                    tiktok_view: 5760,
+                                                    tiktok_like: 2880,
+                                                    tiktok_share: 1440,
+                                                    tiktok_comment: 960,
+                                                    youtube_follower: 480,
+                                                    youtube_view: 480,
+                                                    youtube_like: 480,
+                                                    likee_follower: 1920,
+                                                    likee_view: 5760,
+                                                    likee_like: 2880,
+                                                    likee_share: 1440,
+                                                    likee_comment: 720,
+                                            };
+                        </script>
+    <meta name="referrer" content="no-referrer">
+</head>
+<body>
+<noscript>
+    <meta http-equiv="refresh" content="0; url=/badbrowser">
+</noscript>
+<script>
+    var SupportsCSS = function (property, value) {
+        var element = document.createElement('span');
+        if (element.style[property] !== undefined)
+            element.style.cssText = property + ':' + value;
+        else
+            return false;
+
+        return element.style[property] === value;
+    };
+
+    if (
+        navigator.appVersion.indexOf("MSIE 10") !== -1 ||
+        typeof window.fetch !== 'function' ||
+        (
+            !SupportsCSS('display', 'flex') &&
+            !SupportsCSS('display', '-webkit-flex') &&
+            !SupportsCSS('display', '-ms-flexbox')
+        )
+    )
+        window.location = '/badbrowser'
+</script>
+
+<svg aria-hidden="true" focusable="false" style="width:0;height:0;position:absolute;">
+    <linearGradient id="instagram-gradient" x1="39.02" y1="472.98" x2="472.98" y2="39.02" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#e81e25"/>
+        <stop offset="0.108" stop-color="#ea3522"/>
+        <stop offset="0.416" stop-color="#f1711c"/>
+        <stop offset="0.678" stop-color="#f59d17"/>
+        <stop offset="0.881" stop-color="#f8b814"/>
+        <stop offset="1" stop-color="#f9c213"/>
+    </linearGradient>
+    <linearGradient id="instagram-gradient-old" gradientUnits="userSpaceOnUse" x1="-274.6458" y1="412.2737" x2="-274.6458" y2="413.263" gradientTransform="matrix(48 0 0 -47.9996 13207 19836.832)">
+        <stop  offset="0" style="stop-color:#E09B3D"/>
+        <stop  offset="0.3" style="stop-color:#C74C4D"/>
+        <stop  offset="0.6" style="stop-color:#C21975"/>
+        <stop  offset="1" style="stop-color:#7024C4"/>
+    </linearGradient>
+</svg>
+
+<div class="l-body" id="app">
+    
+    
+    
+            <verify  class="modal" v-slot="_p">
+    <div class="modal__inn">
+        <div class="modal__header">
+            <div class="modal__title">Верификация</div>
+        </div>
+        <div class="modal__block">
+            <form class="form" autocomplete="off">
+                <phone-input v-model="_p.props.phone" class="form__row" v-slot="phoneScope">
+                    <complex-input label="Номер телефона" :class="{ 'complex-input--icon': phoneScope.region }" v-model="phoneScope.phone.value">
+                        <svg-icon v-if="phoneScope.region" :name="phoneScope.region"></svg-icon>
+                        <div class="flex-grow-1"><input type="text" class="input" :disabled="_p.props.isRequested || _p.props.isPhoneDisabled" v-model="phoneScope.phone.value"></div>
+                        <span class="complex-input__addon flex-grow-0" v-show="_p.props.isRequested" style="font-size: 12px;"><a @click.prevent="_p.call('cancel')" href="#">изменить</a></span>
+                    </complex-input>
+                </phone-input>
+
+                                    <div class="placeholder-block placeholder-block--sm">
+    <div class="placeholder-block__inn">
+                <p class="placeholder-block__desc">
+            Верификация не требуется.        </p>
+            </div>
+</div>
+
+                            </form>
+        </div>
+    </div>
+</verify>
+        <confirm class="modal md-confirm" id="confirm-modal" v-slot="_">
+    <div class="modal__inn">
+        <div class="modal__header">
+            <div class="modal__title" v-html="_._.options.title || 'Подтвердите действие'"></div>
+        </div>
+        <div class="modal__block">
+            <div class="md-confirm__msg" v-html="_._.options.message"></div>
+            <div class="row">
+                <div class="col-6"><a @click.prevent="_._.confirm()" href="#" class="btn btn--block btn--green" :class="{ 'is-loading2': _._.isLoading }" v-html="_._.options.buttonLabel || 'Да'"></a></div>
+                <div class="col-6"><a @click.prevent="_._.cancel()" href="#" class="btn btn--block btn--red" v-html="_._.options.cancelButtonLabel || 'Отменить'"></a></div>
+            </div>
+        </div>
+    </div>
+</confirm>
+    
+    <alert class="alert-modal">
+    <template v-slot="_p">
+        <div class="alert-modal__icon" v-if="_p.props.type == 'success'">            <svg-icon  name="check-circle"></svg-icon>
+    </div>
+        <div class="alert-modal__icon" v-if="_p.props.type == 'fail'">            <svg-icon  name="close-circle"></svg-icon>
+    </div>
+        <div class="alert-modal__title" :class="{ 'text-green': _p.props.type == 'success', 'text-red': _p.props.type == 'fail' }" v-html="_p.props.message"></div>
+        <div class="alert-modal__desc">Окно закроется через {$ _p.props.labelLost }</div>
+    </template>
+</alert>
+
+    <slideout trigger="#menu" class="slideout-menu">
+    <div class="swipe">
+        <div class="swipe__top">
+                                                <div class="swipe__head">
+                        <div class="swipe__balance">
+                            <div class="swipe__balance-inn">
+                                            <svg-icon  name="coin-color"></svg-icon>
+                                    <span>{$ balance }</span> ₽
+                            </div>
+                            <a href="/cashin" class="btn btn--light btn--sm"><span>Пополнить</span></a>
+                            <a href="/cashout" class="btn btn--green btn--sm"><span>Вывести</span></a>
+                        </div>
+                    </div>
+
+                    <ul class="swipe__menu">
+                                                    <li class="swipe__menu-item"><a href="/campaign/add" class="swipe__menu-link">            <svg-icon  name="plus-circle"></svg-icon>
+     <span>Создать задание</span></a></li>
+                                                    <li class="swipe__menu-item"><a href="/cashout" class="swipe__menu-link">            <svg-icon  name="card"></svg-icon>
+     <span>Вывести средства</span></a></li>
+                                                    <li class="swipe__menu-item"><a href="/cashin" class="swipe__menu-link">            <svg-icon  name="money"></svg-icon>
+     <span>Пополнить счет</span></a></li>
+                                            </ul>
+                            
+            <ul class="swipe__menu">
+                                                        <li class="swipe__menu-item"><a href="/assignments" class="swipe__menu-link js-section-link">            <svg-icon  name="docs"></svg-icon>
+     <span>Задания</span></a></li>
+                                                        <li class="swipe__menu-item"><a href="/campaign" class="swipe__menu-link js-section-link">            <svg-icon  name="list"></svg-icon>
+     <span>Мои заказы</span></a></li>
+                                                        <li class="swipe__menu-item"><a href="/partners" class="swipe__menu-link js-section-link">            <svg-icon  name="user-plus"></svg-icon>
+     <span>Рефералы</span></a></li>
+                                                        <li class="swipe__menu-item"><a href="/news" class="swipe__menu-link js-section-link">            <svg-icon  name="speaker-1"></svg-icon>
+     <span>Новости</span></a></li>
+                                                        <li class="swipe__menu-item"><a href="/help" class="swipe__menu-link js-section-link">            <svg-icon  name="question-circle"></svg-icon>
+     <span>Помощь</span></a></li>
+                            </ul>
+        </div>
+        <div class="swipe__bottom">
+            <footer class="swipe__group footer">
+                <ul class="footer__menu">
+                                            <li class="footer__menu-item">
+                            <a href="/help" class="footer__menu-link">Помощь</a>
+                        </li>
+                                            <li class="footer__menu-item">
+                            <a href="/regulations" class="footer__menu-link">Правила</a>
+                        </li>
+                                            <li class="footer__menu-item">
+                            <a href="/agreement" class="footer__menu-link">Оферта</a>
+                        </li>
+                                            <li class="footer__menu-item">
+                            <a href="/privacy" class="footer__menu-link">Конфиденциальность</a>
+                        </li>
+                                            <li class="footer__menu-item">
+                            <a href="/price" class="footer__menu-link">Цены</a>
+                        </li>
+                                            <li class="footer__menu-item">
+                            <a href="/api" class="footer__menu-link">API</a>
+                        </li>
+                                            <li class="footer__menu-item">
+                            <a href="/contacts" class="footer__menu-link">Контакты</a>
+                        </li>
+                                    </ul>
+            </footer>
+        </div>
+    </div>
+</slideout>
+    <slideout trigger="#auth" side="right" class="slideout-menu" style="width: 320px;">
+    <div class="auth-menu auth-menu--lg">
+    <div class="auth-menu__top">
+        <div class="auth-menu__user">
+                            <picture class="user-pic"><img :src="user.photo" v-show="user.photo"></picture>
+                <div class="auth-menu__name" v-html="user.name"></div>
+                        <div class="auth-menu__id">Ваш ID: 550330626</div>
+                            <div class="auth-menu__referer">Вас пригласил ID: 550026454</div>
+                    </div>
+        <ul class="auth-menu__nav">
+                            <li class="auth-menu__nav-item d-xs-none">
+                    <a href="/notifications" class="auth-menu__nav-link">
+                        <span class="auth-menu__nav-icon">
+                                        <svg-icon  name="bell-1"></svg-icon>
+                                <span class="auth-menu__nav-notification" v-cloak v-if="notifications">{$ notifications }</span>
+                        </span>
+                        <span class="auth-menu__nav-label">Уведомления</span>
+                    </a>
+                </li>
+            
+                                                <li class="auth-menu__nav-item">
+                        <a href="/cashin" class="auth-menu__nav-link">
+                            <span class="auth-menu__nav-icon">            <svg-icon  name="money-1"></svg-icon>
+    </span>
+                            <span class="auth-menu__nav-label">Пополнить</span>
+                        </a>
+                    </li>
+                                    <li class="auth-menu__nav-item">
+                        <a href="/cashout" class="auth-menu__nav-link">
+                            <span class="auth-menu__nav-icon">            <svg-icon  name="card-1"></svg-icon>
+    </span>
+                            <span class="auth-menu__nav-label">Вывести</span>
+                        </a>
+                    </li>
+                                    <li class="auth-menu__nav-item">
+                        <a href="/accounts" class="auth-menu__nav-link">
+                            <span class="auth-menu__nav-icon">            <svg-icon  name="users-1"></svg-icon>
+    </span>
+                            <span class="auth-menu__nav-label">Профили</span>
+                        </a>
+                    </li>
+                                    <li class="auth-menu__nav-item">
+                        <a href="/settings" class="auth-menu__nav-link">
+                            <span class="auth-menu__nav-icon">            <svg-icon  name="gears"></svg-icon>
+    </span>
+                            <span class="auth-menu__nav-label">Настройки</span>
+                        </a>
+                    </li>
+                                    </ul>
+    </div>
+    <div class="auth-menu__bottom">
+        <a data-static href="/auth/logout" class="auth-menu__logout">Выйти</a>
+    </div>
+</div>
+</slideout>
+
+<header class="header compensate-for-scrollbar js-header">
+    <div class="l-wrapper">
+        <div class="header__inn">
+            <div class="header__hamburger">
+                <a id="menu" href="#" class="hamburger" aria-label="Меню"><span></span></a>
+            </div>
+            <div class="header__left">
+                <div class="header__logo">
+                    <a data-static href="/" class="logo "><img alt="VKserfing" class="logo__img" src="        /frontend/assets/img/logo.svg"></a>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                                                                                <li class="header__menu-item">
+                                <a href="/assignments" class="js-section-link header__menu-link ">            <svg-icon  name="docs"></svg-icon>
+     <span>Задания</span></a>
+                            </li>
+                                                                                <li class="header__menu-item">
+                                <a href="/campaign" class="js-section-link header__menu-link ">            <svg-icon  name="list"></svg-icon>
+     <span>Мои заказы</span></a>
+                            </li>
+                                                                                <li class="header__menu-item">
+                                <a href="/partners" class="js-section-link header__menu-link ">            <svg-icon  name="user-plus"></svg-icon>
+     <span>Рефералы</span></a>
+                            </li>
+                                                                                <li class="header__menu-item">
+                                <a href="/news" class="js-section-link header__menu-link is-active">            <svg-icon  name="speaker-1"></svg-icon>
+     <span>Новости</span></a>
+                            </li>
+                                                                                <li class="header__menu-item">
+                                <a href="/help" class="js-section-link header__menu-link ">            <svg-icon  name="question-circle"></svg-icon>
+     <span>Помощь</span></a>
+                            </li>
+                                            </ul>
+                </nav>
+            </div>
+            <div class="header__right" v-cloak>
+                                                            <div class="header__right-inn">
+                                                            <a href="/cash" class="header__balance">
+                                                <svg-icon  name="money"></svg-icon>
+     {$ balance } ₽
+                                </a>
+                                                        <ul class="header__nav">
+                                
+
+                                <dropdown name="notifications" class="header__nav-item header__notification">
+                                    <a @click="loadNotifications" data-dropdown="trigger" href="#" class="header__nav-link" :class="{'is-active': notifications}">
+                                        <span class="header__nav-count" :class="{ 'header__nav-count--lg': notifications.toString().length >= 3 }" v-if="notifications">{$ notifications }</span>
+                                                    <svg-icon  name="bell"></svg-icon>
+                                        </a>
+                                    <div data-dropdown="drop" class="header__drop" :class="{ 'is-loading': isNotificationsLoading }">
+                                        <div :is="notificationsComponent"></div>
+                                    </div>
+                                </dropdown>
+                            </ul>
+                            <dropdown class="header__user" :class="{'is-has-notifications': notifications }">
+                                <a id="auth" href="#" class="header__user-main d-md-none">
+                                    <span class="header__nav-count" v-if="notifications">{$ notifications }</span>
+                                    <picture class="user-pic"><img :alt="user.name" :src="user.photo" v-show="user.photo"></picture>
+                                </a>
+                                <a href="#" data-dropdown="trigger" class="header__user-main d-none d-md-flex">
+                                    <picture class="user-pic"><img :alt="user.name" :src="user.photo" v-show="user.photo"></picture>
+                                    <span class="header__user-name" v-html="user.name"></span>
+                                </a>
+                                <div data-dropdown="drop" class="header__drop">
+                                    <div class="auth-menu ">
+    <div class="auth-menu__top">
+        <div class="auth-menu__user">
+                        <div class="auth-menu__id">Ваш ID: 550330626</div>
+                            <div class="auth-menu__referer">Вас пригласил ID: 550026454</div>
+                    </div>
+        <ul class="auth-menu__nav">
+            
+                                                <li class="auth-menu__nav-item">
+                        <a href="/cashin" class="auth-menu__nav-link">
+                            <span class="auth-menu__nav-icon">            <svg-icon  name="money-1"></svg-icon>
+    </span>
+                            <span class="auth-menu__nav-label">Пополнить</span>
+                        </a>
+                    </li>
+                                    <li class="auth-menu__nav-item">
+                        <a href="/cashout" class="auth-menu__nav-link">
+                            <span class="auth-menu__nav-icon">            <svg-icon  name="card-1"></svg-icon>
+    </span>
+                            <span class="auth-menu__nav-label">Вывести</span>
+                        </a>
+                    </li>
+                                    <li class="auth-menu__nav-item">
+                        <a href="/accounts" class="auth-menu__nav-link">
+                            <span class="auth-menu__nav-icon">            <svg-icon  name="users-1"></svg-icon>
+    </span>
+                            <span class="auth-menu__nav-label">Профили</span>
+                        </a>
+                    </li>
+                                    <li class="auth-menu__nav-item">
+                        <a href="/settings" class="auth-menu__nav-link">
+                            <span class="auth-menu__nav-icon">            <svg-icon  name="gears"></svg-icon>
+    </span>
+                            <span class="auth-menu__nav-label">Настройки</span>
+                        </a>
+                    </li>
+                                    </ul>
+    </div>
+    <div class="auth-menu__bottom">
+        <a data-static href="/auth/logout" class="auth-menu__logout">Выйти</a>
+    </div>
+</div>
+                                </div>
+                            </dropdown>
+                        </div>
+                                                </div>
+        </div>
+    </div>
+
+    <progress-bar class="progress-bar"></progress-bar>
+</header>
+    <dynamic-page>
+        <!-- Content -->
+                    <data-require
+        class="modal"
+        :require-data="null"
+                        v-slot="_"
+>
+    
+
+    <div class="modal__inn">
+        <div class="modal__header">
+            <div class="modal__title">Заполните необходимые поля</div>
+        </div>
+        <div class="modal__block">
+            <form @submit.prevent="_.i().send()" class="form" autocomplete="off">
+                <div v-if="_.i().requireFields.includes('birthday')" class="form__row">
+                    <complex-input label="День рождения">
+                        <datepicker class="input" v-model="_.i().data.birthday" min-date="04.12.1923" max-date="04.12.2017"></datepicker>
+                    </complex-input>
+                </div>
+                <div v-if="_.i().requireFields.includes('country_id')" class="form__row">
+                    <div class="complex-input complex-input--static">
+                        <label class="complex-input__label">Страна</label>
+                        <select2 placeholder="Не выбрана" v-model="_.i().data.country_id">
+                            <option v-for="c in countries" :value="c.id">{$ c.name }</option>
+                        </select2>
+                    </div>
+                </div>
+                <div v-if="_.i().requireFields.includes('city_id')" class="form__row" v-show="(_.i().data.country_id && _.i().requireFields.includes('city_id')) || _.i().country">
+                    <complex-input label="Город" hint="Начните вводить название города, а затем выберите его из списка">
+                        <autocomplete class="flex-grow-1" name="city" v-model="_.i().data.city_id"></autocomplete>
+                    </complex-input>
+                </div>
+                <div v-if="_.i().requireFields.includes('sex')" class="form__row">
+                    <div class="complex-input complex-input--static">
+                        <label class="complex-input__label">Пол</label>
+                        <div class="badges">
+                            <div v-for="(v, k) in {'2': 'Мужской', '1': 'Женский'}" class="badges__item">
+                                <label class="radio-btn">
+                                    <input v-model="_.i().data.sex" name="gender" :value="k" type="radio">
+                                    <span class="radio-btn__block">{$ v }</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <template v-if="_.i().requireFields.includes('mail')">
+                    <div v-if="(Date.now() / 1000) - $root.user.time_reg >= 86400" class="form__row text">
+                        <p>
+                            Мы ввели регистрацию по E-mail и паролю. Для корректной работы новой системы необходимо актуализировать ваши данные. Введите актуальный E-mail для продолжения работы на сайте.
+                        </p>
+                    </div>
+
+                    <div class="form__row">
+                        <complex-input v-model="_.i().data.mail" label="E-mail адрес"></complex-input>
+                    </div>
+                </template>
+
+                <component v-show="_.props.error" :is="_.props.error" class="alert alert--danger" v-cloak></component>
+                <button class="form__btn btn btn--block" :class="{ 'is-loading': _.props.isLoading }" :disabled="_.i().isEmpty">
+                    <span>Сохранить</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</data-require>
+
+            
+                    
+
+        <div data-swipe-main class="l-main">
+            <div class="l-wrapper">
+                <div class="l-inner">
+                    <aside class="l-inner__aside">
+                        <div class="l-inner__aside-inn">
+                            
+    <ul class="sidebar">
+    <li class="sidebar__item accordion-open">
+        <a href="/news" class="sidebar__link"><span>Все записи</span></a>
+    </li>
+            <li class="sidebar__item ">
+            <a href="/news/2023" class="sidebar__link"><span>2023</span></a>
+        </li>
+            <li class="sidebar__item ">
+            <a href="/news/2022" class="sidebar__link"><span>2022</span></a>
+        </li>
+            <li class="sidebar__item ">
+            <a href="/news/2021" class="sidebar__link"><span>2021</span></a>
+        </li>
+            <li class="sidebar__item ">
+            <a href="/news/2020" class="sidebar__link"><span>2020</span></a>
+        </li>
+            <li class="sidebar__item ">
+            <a href="/news/2019" class="sidebar__link"><span>2019</span></a>
+        </li>
+            <li class="sidebar__item ">
+            <a href="/news/2018" class="sidebar__link"><span>2018</span></a>
+        </li>
+            <li class="sidebar__item ">
+            <a href="/news/2017" class="sidebar__link"><span>2017</span></a>
+        </li>
+            <li class="sidebar__item ">
+            <a href="/news/2016" class="sidebar__link"><span>2016</span></a>
+        </li>
+            <li class="sidebar__item ">
+            <a href="/news/2015" class="sidebar__link"><span>2015</span></a>
+        </li>
+            <li class="sidebar__item ">
+            <a href="/news/2014" class="sidebar__link"><span>2014</span></a>
+        </li>
+            <li class="sidebar__item ">
+            <a href="/news/2013" class="sidebar__link"><span>2013</span></a>
+        </li>
+    </ul>
+            
+        <div class="aside-block">
+    <img src="        /frontend/assets/img/ask-question.svg">
+    <div class="bold">
+        Нужна помощь?
+    </div>
+    <a href="/help" class="btn btn--light btn--sm"><span>Задать вопрос</span></a>
+</div>
+    
+                        </div>
+                    </aside>
+                    <main class="l-inner__main">
+                        
+                        <div class="l-inner__content p-article">
+                            
+            <script type="text/x-template" id="reply-form">
+                <modal-recaptcha class="modal" style="max-width: 370px">
+    <div class="modal__inn">
+        <div class="modal__header">
+            <div class="modal__title">Пройдите проверку</div>
+        </div>
+        <div class="modal__block">
+            <recaptcha></recaptcha>
+        </div>
+    </div>
+</modal-recaptcha>
+<write-form class="write-form"
+    :recaptcha="true"            dynamic-list-id="{dynamic_id}"        url="news/160/comment/{comment_id}/reply"
+>
+    <template v-slot="_p">
+        <span class="alert alert--danger" v-if="_p.props.error" v-html="_p.props.error"></span>
+        <form @submit.prevent="_p.submit" autocomplete="off" class="write-form__f">
+                        <div class="write-form__area">
+                <textarea v-model="_p.props.message" rows="1" class="write-form__input" placeholder="Ваш ответ" v-autosize></textarea>
+                            </div>
+            <div class="write-form__btns">
+                <button class="write-form__submit round-icon" type="submit" :disabled="_p.isDisabled" :class="{ 'is-loading': _p.props.isLoading }">            <svg-icon  name="plane"></svg-icon>
+    </button>
+            </div>
+        </form>
+
+            </template>
+</write-form>
+        </script>
+    
+    <div class="p-article__block">
+        <div class="back-head d-md-none">
+            <div class="back-head__inn">
+                <a class="back-head__btn" href="/news">            <svg-icon  name="chevron-left"></svg-icon>
+    </a>
+                <div class="back-head__body">
+                    <div>
+                        <div class="p-article__title">Нам 10 лет! Подарки исполнителям, заказчикам, рефоводам</div>
+                        <time class="p-article__date">25 мая в 12:17</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                    <div class="p-article__preview" style="background-image: url('/uploads/news/160_full.jpg');">
+                <img class="p-article__img" src="/uploads/news/160_full.jpg">
+                <div class="p-article__head">
+                    <div class="p-article__title">Нам 10 лет! Подарки исполнителям, заказчикам, рефоводам</div>
+                    <time class="p-article__date">25 мая в 12:17</time>
+                </div>
+            </div>
+        
+        <div class="p-article__text text">
+            <p>Приветствуем!</p><p><br></p><p>Спешим поздравить пользователей нашего сервиса – в этом месяце нам исполнилось <strong>10 лет</strong>!</p><p><br></p><p>За это время у нас работали 4 млн исполнителей заданий, было выполнено 6 млн заказов, более 100 реселлеров перепродают наши услуги.&nbsp;</p><p><br></p><p>Рады и дальше развивать наш сервис для продуктивной работы исполнителей, заказчиков и рефоводов.</p><p><br></p><p>День рождения у нас – подарки вам! Спешите воспользоваться <strong>до 31 мая</strong>:</p><p>1. Для исполнителей <strong>отменяем комиссию</strong> на все способы вывода средств – <strong>0%</strong> вместо 3-9%.</p><p>2. Для рефоводов <strong>увеличиваем реферальные отчисления</strong> –&nbsp;<strong>30%</strong> от доходов и трат ваших рефералов вместо 5-15%.</p><p>3. Для заказчиков <strong>увеличиваем бонусы при пополнении баланса</strong> – начислим <strong>+30%</strong> к пополнению от любой суммы и любым способом вместо 5-20%. Бонусы будут действовать и для реселлеров.</p><p><br></p><p>Также рады сообщить, что теперь у нас есть официальный Telegram-канал:&nbsp;<a href="https://t.me/vkserfing" rel="noopener noreferrer" target="_blank">https://t.me/vkserfing</a></p><p>Рекомендуем подписаться, чтобы оперативно получать уведомления о новостях проекта и работе сайта.</p><p><br></p><p>Приятной работы!</p>        </div>
+    </div>
+
+            <div class="placeholder-block placeholder-block--sm">
+    <div class="placeholder-block__inn">
+                <p class="placeholder-block__desc">
+            Комментирование отключено        </p>
+            </div>
+</div>
+
+    
+                        </div>
+                        <footer class="footer">
+    <div class="footer__inn">
+        <ul class="footer__menu">
+                            <li class="footer__menu-item">
+                    <a href="/news" class="footer__menu-link">Новости</a>
+                </li>
+                            <li class="footer__menu-item">
+                    <a href="/regulations" class="footer__menu-link">Правила</a>
+                </li>
+                            <li class="footer__menu-item">
+                    <a href="/agreement" class="footer__menu-link">Оферта</a>
+                </li>
+                            <li class="footer__menu-item">
+                    <a href="/privacy" class="footer__menu-link">Конфиденциальность</a>
+                </li>
+                            <li class="footer__menu-item">
+                    <a href="/price" class="footer__menu-link">Цены</a>
+                </li>
+                            <li class="footer__menu-item">
+                    <a href="/api" class="footer__menu-link">API</a>
+                </li>
+                            <li class="footer__menu-item">
+                    <a href="/contacts" class="footer__menu-link">Контакты</a>
+                </li>
+                    </ul>
+        <div class="footer__develop">
+            <!--noindex-->Дизайн: <a href="https://flatonica.com" target="_blank" rel="nofollow noreferrer">Flatonica</a><!--/noindex-->
+        </div>
+    </div>
+
+    <span class="footer__footnote">
+        <!--noindex-->* – Meta Platforms Inc. (Facebook, Instagram) - признана экстремистской, ее деятельность запрещена на территории России.<!--/noindex-->
+    </span>
+</footer>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <!-- //Content -->
+    </dynamic-page>
+</div> 
+<script type="text/javascript" src="/frontend/js/app.vendor.f2ff8afec2ad9ab21dd7.js" defer="1"></script>
+<script type="text/javascript" src="/frontend/js/app.a7d9b6cf1d0ec2d65e56.bundle.js" defer="1"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(21173350, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/21173350" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140026603-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-140026603-2');
+</script></body>
+</html>

@@ -33,10 +33,10 @@
 }
 /* home__features */
 .p-home__features {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 84px;
     overflow: hidden;
-    background: #ffffff;
+    background: #f7f8fc;
 }
 .p-home__features-head {
     display: flex;
