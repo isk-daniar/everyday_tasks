@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>VKFurrow – заработок и продвижение в ВКонтакте</title>
     <!-- Bootstrap -->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
     <!-- FONTS -->
     <link rel="stylesheet" href="{% static 'fonts/Commissioner-Bold/Commissioner-Bold.ttf' %}">
     <link rel="stylesheet" href="{% static 'fonts/Commissioner-ExtraBold/Commissioner-ExtraBold.ttf' %}">
@@ -20,9 +21,12 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'css/home/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home/home_modal.css' %}">
     <link rel="stylesheet" href="{% static 'css/home/header.css' %}">
     <link rel="stylesheet" href="{% static 'css/home/start.css' %}">
     <link rel="stylesheet" href="{% static 'css/home/business.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home/news.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home/footer.css' %}">
     <link rel="stylesheet" href="{% static 'css/home/s.css' %}">
     <style type="text/css">
         .h-switcher input{display:none}input:checked~.h-switcher__block:before{left:19px}input:not(:checked)~.h-switcher__label:not(:last-child){opacity:1}input:checked~.h-switcher__label:last-child{opacity:1}.h-header.is-scrolling .h-switcher,.h-switcher--inverse{color:rgba(37,49,71,.6)}.h-header.is-scrolling .h-switcher input:checked~.h-switcher__label:last-child,.h-header.is-scrolling .h-switcher input:not(:checked)~.h-switcher__label:not(:last-child),.h-switcher--inverse input:checked~.h-switcher__label:last-child,.h-switcher--inverse input:not(:checked)~.h-switcher__label:not(:last-child){color:#6c76ec}.h-header.is-scrolling .h-switcher .h-switcher__block,.h-switcher--inverse .h-switcher__block{background:rgba(126,151,255,.13)}.h-header.is-scrolling .h-switcher .h-switcher__block:before,.h-switcher--inverse .h-switcher__block:before{background:#959dff;-webkit-box-shadow:inset 2px 2px 8px 2px #4d89ff;box-shadow:inset 2px 2px 8px 2px #4d89ff}.h-header.is-scrolling .h-switcher .h-switcher__label,.h-switcher--inverse .h-switcher__label{opacity:1!important}.h-switcher__block{width:40px;height:24px;background:rgba(255,255,255,.07);border-radius:64px;position:relative;margin:0 14px}.h-switcher__block:before{content:"";position:absolute;background:#8cc1ff; #528dff;box-shadow:inset 2px 2px 8px 2px #528dff;border-radius:50%;width:18px;height:18px;top:3px;left:3px;-webkit-transition:all ease .3s;transition:all ease .3s}.h-switcher__label{font-size:12px;font-weight:600;opacity:.7}@media only screen and (max-width:768px){.h-switcher__label{font-size:14px}}
@@ -31,6 +35,7 @@
 <body>
     <div id="homeapp" class="l-body p-home">
         <div class="modal"></div>
+        <!-- header -->
         <header class="h-header">
             <div class="h-header__wrapper">
                 <div class="h-header__inn">
@@ -50,21 +55,34 @@
                     <div class="h-header__logo">
                         <a href="/" class="logo ">
                             <img src="{% static 'icons/home/logo.png' %}">
-                            <div class="h-header__logo-default inline-logo"></div>
-                            <div class="h-header__logo-scrolling inline-logo-dark"></div>
+                            <div class="h-header__logo-default"></div>
                         </a>
                     </div>
                     <div class="h-header__auth">
-                        <a href="/assignments" class="h-user">
-                            <picture class="user-pic">
-                                <img alt="IzDan4ik" src="https://vkserfing.ru//uploads/accounts_image/551421/42b20d8b35a3fad1e6889af19c678bb4_thumb.jpg">
-                            </picture>
-                            <span class="h-user__name">IzDan4ik</span>
-                        </a>
+                          {% if user.is_authenticated %}
+                            <a href="/assignments" class="h-user">
+                                <picture class="user-pic">
+                                    <img alt="IzDan4ik" src="https://vkserfing.ru//uploads/accounts_image/551421/42b20d8b35a3fad1e6889af19c678bb4_thumb.jpg">
+                                </picture>
+                                <span class="h-user__name">{{ user.username }}</span>
+                                <div class="h-chevron">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                          {% else %}
+                            <a href="#" class="h-header__auth-btn">
+                                <img class="icon icon-user-2 " src="{% static 'icons/home/user-2.svg' %}">
+                                Войти
+                            </a>
+                          {% endif %}
                     </div>
                 </div>
             </div>
         </header>
+
+        <!-- start -->
         <section id="start" class="p-home__head">
             <div class="waveWrapper waveAnimation">
               <div class="waveWrapperInner bgTop">
@@ -84,14 +102,75 @@
                         <br>
                         <span>в социальной сети VK</span>
                     </h1>
-                    <a href="/assignments" class="h-user">
-                        <picture class="user-pic">
-                            <img alt="IzDan4ik" src="https://vkserfing.ru//uploads/accounts_image/551421/42b20d8b35a3fad1e6889af19c678bb4_thumb.jpg"></picture>
-                        <span class="h-user__name">IzDan4ik</span>
-                    </a>
+                    {% if user.is_authenticated %}
+                        <a href="/assignments" class="h-user">
+                            <picture class="user-pic">
+                                <img alt="IzDan4ik" src="https://vkserfing.ru//uploads/accounts_image/551421/42b20d8b35a3fad1e6889af19c678bb4_thumb.jpg"></picture>
+                            <span class="h-user__name">{{ user.username }}</span>
+                            <div class="h-chevron">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    {% else %}
+                        <!-- Button trigger modal -->
+                        <a href="#" class="h-btn h-btn--blue" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <span class="h-btn__waves">
+                                <canvas style="position: absolute; left: 0px; top: 0px; z-index: 1; pointer-events: none; width: 220px; height: 70px;" width="220" height="70"></canvas>
+                            </span>
+                            <span>Начать сейчас</span>
+                            <div class="icon icon-chevron-right ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="h-modal modal-content">
+                              <div class="modal-body">
+                                  <button type="button" class="modal-close btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  <div class="h-modal h-auth">
+                                      <div class="h-modal__inn">
+                                          <div class="h-auth__left">
+                                              <div class="waveWrapper waveAnimation">
+                                              <div class="waveWrapperInner bgTop">
+                                                <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+                                              </div>
+                                              <div class="waveWrapperInner bgMiddle">
+                                                <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+                                              </div>
+                                              <div class="waveWrapperInner bgBottom">
+                                                <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+                                              </div>
+                                            </div>
+                                              <figure class="h-auth__logo">
+                                                  <img alt="VKserfing" src="{% static 'icons/home/logo-small.svg' %}">
+                                              </figure>
+                                              <div class="h-auth__waves">
+                                                  <canvas width="390" height="500" style="position: absolute; left: 0px; top: 0px; z-index: 1; pointer-events: none; width: 390px; height: 500px;"></canvas>
+                                              </div>
+                                              <figure class="h-auth__img">
+                                                  <img srcset="        /frontend/assets/img/home/phone.png,/frontend/assets/img/home/phone@2x.png 2x">
+                                              </figure>
+                                          </div>
+                                          <div class="h-modal__content">
+
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </section>
+
+        <!-- business -->
         <section id="business" class="p-home__features">
             <div class="p-home__head-stats">
                     <div class="stats-row">
@@ -156,7 +235,7 @@
                                             <div class="feature__name wow fadeInLeft">Заработок с помощью личных страниц соцсетей</div>
                                             <div class="feature__icon wow fadeInUp">
                                                 <picture>
-                                                    <img  width="240" height="238"  src="{% static 'icons/home/carousel/smile.png' %}">
+                                                    <img  width="240" height="238"  src="{% static 'icons/home/business/smile.png' %}">
                                                 </picture>
                                             </div>
                                         </div>
@@ -166,7 +245,7 @@
                                             <div class="feature__name wow fadeInLeft">Более 500 новых заданий ежедневно</div>
                                             <div class="feature__icon wow fadeInUp">
                                                 <picture>
-                                                    <img  width="240" height="238"  src="{% static 'icons/home/carousel/copy.png' %}">
+                                                    <img  width="240" height="238"  src="{% static 'icons/home/business/copy.png' %}">
                                                 </picture>
                                             </div>
                                         </div>
@@ -176,7 +255,7 @@
                                             <div class="feature__name wow fadeInLeft">Вывод средств на QIWI, ЮMoney, Payeer, Perfect Money</div>
                                             <div class="feature__icon wow fadeInUp">
                                                 <picture>
-                                                    <img  width="240" height="238"  src="{% static 'icons/home/carousel/wallet.png' %}">
+                                                    <img  width="240" height="238"  src="{% static 'icons/home/business/wallet.png' %}">
                                                 </picture>
                                             </div>
                                         </div>
@@ -186,7 +265,7 @@
                                             <div class="feature__name wow fadeInLeft">Выплаты каждую субботу без задержек</div>
                                             <div class="feature__icon wow fadeInUp">
                                                 <picture>
-                                                    <img  width="240" height="238"  src="{% static 'icons/home/carousel/check.png' %}">
+                                                    <img  width="240" height="238"  src="{% static 'icons/home/business/check.png' %}">
                                                 </picture>
                                             </div>
                                         </div>
@@ -198,7 +277,95 @@
                 </div>
             </div>
         </section>
+
+        <!-- news -->
+        <section id="news" class="section p-home__news">
+            <div class="l-wrapper">
+                <h2 class="section__title">Новости</h2>
+                <div class="h-carousel">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="width: 359px; margin-right: 40px;">
+                                <a href="/news/price-change-for-everyone" class="h-news">
+                                    <span class="h-news__title">Увеличение цен для исполнителей и заказчиков</span>
+                                    <time class="h-news__time">19 сентября в 18:51</time>
+                                    <figure class="h-news__img">
+                                        <img src="{% static 'icons/home/news/159_thumb.jpg' %}">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" style="width: 359px; margin-right: 40px;">
+                                <a href="/news/ten-years" class="h-news">
+                                    <span class="h-news__title">Нам 10 лет! Подарки исполнителям, заказчикам, рефоводам</span>
+                                    <time class="h-news__time">25 мая в 12:17</time>
+                                    <figure class="h-news__img">
+                                        <img src="{% static 'icons/home/news/173_thumb.jpg' %}">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="swiper-slide" style="width: 359px; margin-right: 40px;">
+                                <a href="/news/worldcard-tiktok-fee" class="h-news">
+                                    <span class="h-news__title">Прием зарубежных карт, изменения в бонусах и комиссиях</span>
+                                    <time class="h-news__time">12 марта в 19:48</time>
+                                    <figure class="h-news__img">
+                                        <img src="{% static 'icons/home/news/173_thumb.jpg' %}">
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="h-footer">
+            <div class="l-wrapper">
+                <div class="h-footer__inn">
+                    <div class="h-footer__row">
+                        <div class="h-footer__logo d-none d-sm-block">
+                            <a href="/" class="inline-logo-dark">
+                                <img src="{% static 'icons/home/logo_01.png' %}">
+                            </a>
+                        </div>
+                        <nav class="h-footer__menu">
+                            <ul class="h-footer__menu-list">
+                                <li class="h-footer__menu-item">
+                                    <a href="/help" class="h-footer__menu-link">Помощь</a>
+                                </li>
+                                <li class="h-footer__menu-item">
+                                    <a href="/regulations" class="h-footer__menu-link">Правила</a>
+                                </li> <li class="h-footer__menu-item">
+                                    <a href="/agreement" class="h-footer__menu-link">Оферта</a>
+                                </li> <li class="h-footer__menu-item">
+                                    <a href="/privacy" class="h-footer__menu-link">Конфиденциальность</a>
+                                </li>
+                                <li class="h-footer__menu-item">
+                                    <a href="/price" class="h-footer__menu-link">Цены</a>
+                                </li>
+                                <li class="h-footer__menu-item">
+                                    <a href="/api" class="h-footer__menu-link">API</a>
+                                </li> <li class="h-footer__menu-item">
+                                    <a href="/contacts" class="h-footer__menu-link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="h-footer__row">
+                        <div class="h-footer__copyright">
+                            © 2013 – 2023 VKfurrow
+                        </div>
+                        <div class="h-footer__develop">Дизайн:
+                            <a href="https://flatonica.com" target="_blank" rel="nofollow noreferrer">Flatonica</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     {% block content %}{% endblock %}
 </body>
+<!-- script -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </html>

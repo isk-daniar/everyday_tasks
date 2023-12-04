@@ -68,6 +68,9 @@
     align-items: center;
     justify-content: flex-end;
 }
+.h-user:hover {
+    background: #7d6fef;
+}
 .h-header .h-user {
     height: 55px;
     padding-left: 18px;
@@ -85,11 +88,10 @@
     transition: all ease .3s;
     color: #fff;
 }
-.h-header .h-user:before {
+.h-header .h-chevron {
     right: 15px;
 }
-.h-user:before {
-    content: "";
+.h-chevron {
     font-size: 11px;
     position: absolute;
     top: 50%;
@@ -125,4 +127,97 @@
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+}
+.h-header__auth-btn {
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 64px;
+    height: 55px;
+    font-weight: 700;
+    display: inline-flex;
+    padding: 1px 32px 0;
+    align-items: center;
+    transition: all ease .3s;
+    font-size: 14px;
+    color: #fff;
+}
+.h-header__auth-btn:hover {
+    background: #fff!important;
+    color: #6770e0;
+}
+.h-header__auth-btn:hover .icon {
+    fill: #6770e0;
+}
+.h-header__auth-btn .icon {
+    font-size: 14px;
+    fill: #cfc7fe;
+    margin-right: 8px;
+}
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    transition: all ease .3s;
+    width: 1em;
+    height: 1em;
+}
+.h-btn--blue {
+    background: #4caaff;
+    box-shadow: 0 24px 40px -12px rgba(29,147,211,.55), inset 4px 4px 12px 2px rgba(0,255,209,.25);
+}
+.h-btn--blue:hover {
+    background: #4caaff;
+    box-shadow: none;
+}
+.h-btn, .h-btn:before, .h-btn__waves canvas {
+    border-radius: 64px;
+}
+.h-btn--blue:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background: radial-gradient(50.46% 171.87% at 49.08% 47.66%,#5bceff 0,#309cff 100%);
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+}
+.h-btn {
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 32px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    transition: all ease .3s;
+    position: relative;
+    min-width: 220px;
+}
+.h-btn__waves {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.h-btn:hover .icon {
+    left: 6px;
+}
+.h-btn--blue .icon, .h-btn--blue>span:not([class]) {
+    z-index: 3;
+    position: relative;
+}
+.h-btn .icon {
+    fill: #fff;
+    margin-left: 14px;
+    transition: all ease .3s;
+    left: 0;
+}
+.h-btn--blue:hover:before {
+    opacity: 0;
 }

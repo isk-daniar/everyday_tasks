@@ -103,6 +103,10 @@ textarea {
 *, :after, :before {
     box-sizing: inherit;
 }
+ol,
+ul {
+    list-style-type: none;
+}
 input {
     font-family: Montserrat,sans-serif;
 }
@@ -112,7 +116,6 @@ input:not(:checked)~.h-switcher__label:not(:last-child) {
 a {
     text-decoration: none;
     color: #6972e0;
-    -webkit-transition: color ease .3s;
     transition: color ease .3s;
 }
 body {

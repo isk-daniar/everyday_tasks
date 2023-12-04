@@ -22,7 +22,7 @@
     position: absolute;
     width: 100%;
     overflow: hidden;
-    height: 60%;
+    height: 30%;
     background-image: linear-gradient(to top, #31007f 20%, #6615e9 80%);
 }
 .bgTop {
