@@ -7,7 +7,6 @@
   {% if user.is_authenticated %}
     <p>Добро пожаловать, Вы вошли в систему как {{ user.username }}</p>
   {% else %}
-    <a href="{% provider_login_url 'google' %}">Login With Google</a>
     <a href="{% provider_login_url 'vk' %}">Login With VK</a>
   {% endif %}
 

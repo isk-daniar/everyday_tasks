@@ -1,3 +1,8 @@
+.modal-dialog {
+    max-width: none!important;
+    margin-right: auto;
+    margin-left: auto;
+}
 .modal-close {
     position: absolute;
     right: 24px;
@@ -10,9 +15,7 @@
     align-items: center;
     justify-content: center;
     z-index: 13;
-    transition: -webkit-transform ease .3s;
     transition: transform ease .3s;
-    transition: transform ease .3s,-webkit-transform ease .3s;
 }
 .modal-close:hover {
     transform: rotate(90deg);
@@ -31,7 +34,6 @@
 }
 .h-modal__inn {
     display: flex;
-    min-height: 500px;
 }
 .h-auth__left {
     width: 390px;
@@ -67,4 +69,111 @@
     position: relative;
     z-index: 9;
     flex-grow: 1;
+}
+.h-auth__grow {
+    flex-grow: 1;
+}
+.relative {
+    position: relative;
+}
+.h-auth__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #081f4d;
+    margin-bottom: 12px;
+}
+.h-auth__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999faf;
+    margin-bottom: 22px;
+}
+.h-auth .h-socials {
+    margin-bottom: 32px;
+}
+/* modal__content - form */
+.form__row {
+    margin-bottom: 40px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -11px -22px;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.complex-input__input {
+    position: relative;
+}
+.complex-input__input-inn>.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    fill: #999faf;
+    left: 16px;
+    pointer-events: none;
+}
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    transition: all ease .3s;
+    width: 1em;
+    height: 1em;
+}
+.complex-input input {
+    display: block;
+    width: 81%;
+    background: #f7f8fc;
+    border: 1px solid #ebedf2;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #081f4d;
+    padding-left: 50px;
+    height: 60px;
+    appearance: none;
+}
+.btn--lgd {
+    height: 60px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.btn--block {
+    width: 90%;
+}
+.btn {
+    font-weight: 600;
+    display: inline-flex;
+    border: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #6972e0;
+    color: #fff;
+    transition: all ease .3s;
+    padding: 0 20px;
+}
+.btn:hover {
+    color: #fff;
+    box-shadow: 0 20px 15px rgba(104,96,208,.04), 0 13px 14px rgba(104,96,208,.12), 0 7px 12px rgba(104,96,208,.1);
+    background: #707af3;
+}
+.h-auth__hint, .h-auth__hint a {
+    color: #9296ab;
+}
+.h-auth__hint {
+    font-size: 11px;
+    line-height: 18px;
+    padding-top: 15px;
+    text-align: left;
 }

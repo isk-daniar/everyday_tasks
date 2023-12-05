@@ -64,3 +64,23 @@
 .waveAnimation .waveBottom {
     animation: move_wave 15s linear infinite;
 }
+/* modal-a */
+.AwaveWrapper {
+    overflow: hidden;
+    position: absolute;
+    width: 890px;
+    height: 800px;
+    left: -200px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    transform: rotate(270deg);
+}
+.AwaveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 50%;
+    background-image: linear-gradient(to top, #31007f 20%, #6615e9 80%);
+}
