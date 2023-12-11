@@ -29,7 +29,6 @@
     max-width: 815px;
     padding: 0;
     margin: auto!important;
-    background: #fff;
     border-radius: 32px;
 }
 .h-modal__inn {
@@ -176,4 +175,45 @@
     line-height: 18px;
     padding-top: 15px;
     text-align: left;
+}
+.h-social {
+    height: 56px;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ebedf2;
+    border-radius: 8px;
+    background: #fff;
+    position: relative;
+    transition: all ease .3s;
+}
+.h-social-item{
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.h-socials__list {
+    padding-bottom: 10px;
+}
+.h-vk-icon {
+    padding-right: 5px;
+}
+.h-google-icon {
+    width: 24px;
+    height: 24px;
+    padding-right: 5px;
+}
+.h-bk-title {
+    font-weight: 600;
+    color: #999faf;
+    font-size: 14px;
+}
+.h-social:hover {
+    transform: translateY(-2px);
+}
+.h-social--vk:hover, .h-social--vk:hover:before {
+    border-color: #cee2ff;
+}
+.h-social--google:hover, .h-social--google:hover:before {
+    border-color: #ffd1ce;
 }
