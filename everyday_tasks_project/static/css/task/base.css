@@ -1,0 +1,61 @@
+body {
+    min-width: 320px;
+    color: #4e5665;
+    font-family: Montserrat,Arial,-apple-system-body,sans-serif;
+    font-weight: 500;
+    background: #f7f8fc;
+    line-height: normal;
+    position: relative;
+    font-size: 12px;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #6972e0;
+    transition: color ease .3s;
+}
+a img, fieldset, img {
+    border: none;
+}
+/* header */
+.header {
+    padding: 10px 0;
+}
+.l-wrapper {
+    max-width: 1330px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+.header__inn {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: relative;
+}
+.header__left {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.header__logo {
+    width: 230px;
+    margin-right: 35px;
+    text-align: center;
+}
+.header__logo .logo {
+    display: inline-block;
+    width: 140px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}

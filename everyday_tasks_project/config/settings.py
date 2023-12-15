@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.vk',
 
     'oauth',
+    'task',
 ]
 
 SWAGGER_SETTINGS = {
