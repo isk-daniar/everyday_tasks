@@ -30,10 +30,24 @@ img {
 ol, ul {
     list-style-type: none;
 }
-/* header */
-.l-body {
+.btn{
+    font-weight: 600;
+    display: inline-flex;
+    border: 0;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    font-size: 12px;
+    border-radius: 8px;
     background: #6972e0;
+    color: #fff;
+    transition: all ease .3s;
+    padding: 0 20px;
 }
+/* header */
 .header {
     padding: 10px 0;
 }
@@ -100,7 +114,15 @@ ol, ul {
     margin-right: 12px;
     fill: #b9bdf5;
 }
-
+.header__menu-link:hover {
+    color: #fff;
+}
+.header__menu-link.is-active {
+    background: #7079e9;
+}
+.header__menu-link.is-active, .header__menu-link:hover {
+    color: #fff;
+}
 /* header__right  */
 .header__right-inn {
     display: inline-flex;
@@ -222,4 +244,60 @@ ol, ul {
 @media only screen and (max-width: 1300px)
 .header__user-name {
     display: none;
+}
+
+/* header__user */
+.l-wrapper {
+    max-width: 1330px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}
+.l-inner {
+    display: flex;
+    padding: 0 0 60px;
+    flex-wrap: nowrap;
+    min-height: calc(100vh - 80px);
+}
+.l-inner__aside {
+    width: 265px;
+    flex-shrink: 0;
+    padding-right: 35px;
+}
+.l-inner__aside-inn {
+    position: sticky;
+    top: 80px;
+}
+.add-btn {
+    width: 100%;
+    background: #73b2ff;
+    color: #fff;
+}
+.add-btn {
+    border-radius: 20px;
+}
+.add-btn .icon {
+    fill: #fff;
+    font-size: 1.5em;
+    margin-right: 4px;
+    margin-top: -1px;
+}
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    transition: all ease .3s;
+    width: 1em;
+    height: 1em;
+}
+.l-main:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #6972e0;
+    height: 160px;
+    z-index: -1;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
 }
