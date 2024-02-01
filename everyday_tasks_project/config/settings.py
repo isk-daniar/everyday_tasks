@@ -12,23 +12,23 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from datetime import timedelta
 from pathlib import Path
-import environ
+from dotenv import load_dotenv
 import os
 
+
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env = environ.Env()
-environ.Env.read_env()
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
-DEBUG = env.bool('DEBUG', False)
+DEBUG = os.environ.get('DEBUG', False)
 
-ALLOWED_HOSTS = [env("DJANGO_ALLOWED_HOSTS")]
+ALLOWED_HOSTS = [os.environ.get("DJANGO_ALLOWED_HOSTS")]
 
 
 # Application definition
@@ -101,12 +101,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': env("SQL_ENGINE"),
-        'NAME': env("SQL_DATABASE"),
-        'USER': env("SQL_USER"),
-        'PASSWORD': env("SQL_PASSWORD"),
-        'HOST': env("SQL_HOST"),
-        'PORT': env("SQL_PORT"),
+        'ENGINE': os.environ.get("SQL_ENGINE"),
+        'NAME': os.environ.get("SQL_DATABASE"),
+        'USER': os.environ.get("SQL_USER"),
+        'PASSWORD': os.environ.get("SQL_PASSWORD"),
+        'HOST': os.environ.get("SQL_HOST"),
+        'PORT': os.environ.get("SQL_PORT"),
     }
 }
 
